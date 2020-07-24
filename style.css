@@ -22,6 +22,7 @@ header {
 #topLogo {
     padding-top: 60px;
     font-size: 94px;
+    text-decoration: underline;
 }
 
 #botLogo {
@@ -33,15 +34,15 @@ body h1 {
 }
 
 .main {
-    margin-left: 12%;
-    margin-right: 15%;
+    margin-left: 8%;
+    margin-right: 11%;
     margin-bottom: 50px;
     text-align: center;
     
 }
 
 .product {
-    width: 300px;
+    max-width: 350px;
     display: inline-block;
     margin-left: 5%;
     margin-top: 20px;
@@ -49,6 +50,10 @@ body h1 {
     border: 3px solid black;
     border-radius: 3px;
     box-shadow: 0 0 7px 10px silver;
+}
+
+.product img {
+    box-shadow: 0 7px 6px 8px silver;
 }
 
 footer {
@@ -77,4 +82,18 @@ a:visited {
     color: white;
 }
 
+a:hover {
+    color: silver;
+}
+
+.hidden {
+    display: none;
+}
+
+form {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 320px;
+    margin: auto;
+}
     
