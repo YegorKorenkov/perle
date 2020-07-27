@@ -12,6 +12,7 @@ header {
     background-image: url(images/background2.jpg);
     background-size: 100%;
     box-shadow: 0 0 5px 8px silver;
+    position: relative;
 }
 
 #topLogo, #botLogo {
@@ -63,6 +64,8 @@ body h1 {
     box-shadow: 0 0 7px 10px silver;
 }
 
+
+
 .product img {
     max-width: 92%;
     height: auto;
@@ -71,8 +74,10 @@ body h1 {
 }
 
 .product p {
-    font-size: 18px;
-    padding: 0 10px 0 10px;
+    margin: 10px 0 10px 0;
+    padding: 0 15px 0 15px;
+    font-size: 16px;
+    line-height: 90%;
 }
 
 .buy {
@@ -110,23 +115,26 @@ footer {
     height: 100px;
     background-color: #1f1f1f;
     box-shadow: 0 0 8px 10px #1f1f1f;
+    text-align: center;
 }
 
 #giveaway {
     margin: 0;
-    position: fixed;
-    bottom: 20px;
-    right: 1%;
-    width: 8%;
+    width: 15%;
     height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 #giveaway a img {
     max-width: 100%;
     height: auto;
-    border: 1px solid white;
 }
 
+.inst {
+    display: inline-block;
+}
 
 footer img {
     margin-right: 5px;
