@@ -22,11 +22,21 @@ header {
 #topLogo {
     padding-top: 60px;
     font-size: 94px;
-    text-decoration: underline;
+    line-height: 90%;
+}
+
+#topLogo:after {
+    content: "";
+    display: block;
+    width: 340px;
+    height: 3px;
+    margin: 0 auto 20px;
+    background-color: white;
 }
 
 #botLogo {
     font-size: 64px;
+    line-height: 80%;
 }
 
 body h1 {
@@ -42,7 +52,8 @@ body h1 {
 }
 
 .product {
-    width: 250px;
+    width: 260px;
+    height: auto;
     display: inline-block;
     margin-left: 5%;
     margin-top: 20px;
@@ -53,31 +64,82 @@ body h1 {
 }
 
 .product img {
-    max-width: 100%;
+    max-width: 92%;
     height: auto;
+    margin: 0 4% 0 4%;
     box-shadow: 0 7px 6px 8px silver;
+}
+
+.product p {
+    font-size: 18px;
+    padding: 0 10px 0 10px;
+}
+
+.buy {
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px solid black;
+
+    width: 130px;
+    height: 30px;
+
+    position: relative;
+    text-align: left;
+}
+
+.price {
+    margin: 3px;
+}
+
+.buy a button {
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0px;
+    border-radius: 0;
+
+    background-color: #1f1f1f;
+    color: white;
 }
 
 footer {
     height: 100px;
-    background-color: black;
-    box-shadow: 0 0 8px 10px black;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 8px 10px #1f1f1f;
 }
 
 #giveaway {
+    margin: 0;
     position: fixed;
     bottom: 20px;
-    right: 0px;
+    right: 1%;
+    width: 8%;
+    height: auto;
 }
+
+#giveaway a img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid white;
+}
+
 
 footer img {
     margin-right: 5px;
     margin-top: 5px;
-}
+}  
 
 a:link {
     color: white;
     text-decoration: none;
+}
+
+.buy button:hover {
+    background-color: #434040;
 }
 
 a:visited {
@@ -93,9 +155,32 @@ a:hover {
 }
 
 form {
-    padding: 20px;
+    padding: 40px 20px 20px;
     background-color: #fff;
     max-width: 320px;
     margin: auto;
+    position: relative;
 }
+
+form input {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+form button {
+    background-color: #1f1f1f;
+    color: white;
+    border: 0px;
+    border-radius: 0;
+    width: 80px;
+    height: auto;
+    line-height: 160%;
+
+    position: absolute;
+    bottom: 2%;
+    right: 40%;
+}
+ form button:hover {
+    background-color: #434040;
+ }
     

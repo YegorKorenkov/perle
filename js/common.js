@@ -7,7 +7,6 @@ $(document).ready(function() {
 	}));
 
 	$("#form").submit(function(e) {
-		e.preventDefault;
 		$.ajax({
 			type: "POST",
 			url: "mail.php",
@@ -15,6 +14,7 @@ $(document).ready(function() {
 		}).done(function() {
 			alert("Thanks for order");
 			setTimeout(function() {
+				$.magnificPopup.close();
 			}, 1000);
 		});
 	});
