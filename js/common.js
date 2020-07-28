@@ -11,17 +11,18 @@ $(document).ready(function() {
 	}));
 
 	$("#form").submit(function(e) {
-		var data = $(this).serialize()
-
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: data
-		}).done(function() {
-			alert("Thanks for order");
-			setTimeout(function() {
-				$.magnificPopup.close();
-			}, 1000);
-		});
+		alert('Спасибо за заказ, мы свяжимся с вами в ближайшее время');
+	// 	e.preventDefault();
+	// 	// var data = $(this).serialize()
+	// 	$.ajax({
+	// 		type: "POST",
+	// 		url: "mail.php",
+	// 		data: {test: '123'},
+	// 	}).done(function() {
+	// 		alert("Thanks for order");
+	// 		setTimeout(function() {
+	// 			$.magnificPopup.close();
+	// 		}, 1000);
+	// 	});
 	});
 });
