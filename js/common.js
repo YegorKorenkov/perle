@@ -18,7 +18,7 @@ $(document).ready(function() {
 			url: "mail.php",
 			data: data
 		}).done(function() {
-			alert("Thanks for order");
+			alert("Спасибо за заказ!");
 			setTimeout(function() {
 				$.magnificPopup.close();
 			}, 1000);
