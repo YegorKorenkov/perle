@@ -9,20 +9,9 @@ $(document).ready(function() {
 		yaCounterXXXXXXXX.reachGoal("goal");
 		return true;
 	}));
+	$("#phone").mask("+(380)99-999-9999");
 
-	$("#form").submit(function(e) {
+	$("#form").submit(function() {
 		alert('Спасибо за заказ, мы свяжимся с вами в ближайшее время');
-	// 	e.preventDefault();
-	// 	// var data = $(this).serialize()
-	// 	$.ajax({
-	// 		type: "POST",
-	// 		url: "mail.php",
-	// 		data: {test: '123'},
-	// 	}).done(function() {
-	// 		alert("Thanks for order");
-	// 		setTimeout(function() {
-	// 			$.magnificPopup.close();
-	// 		}, 1000);
-	// 	});
 	});
 });
