@@ -17,6 +17,7 @@ require 'vendor/autoload.php';
 $mail = new PHPMailer;
 
 $customer_name = $_POST['name'];
+$customer_surname = $_POST['surname'];
 $customer_address = $_POST['address'];
 $phone = $_POST['phone'];
 $product_name = $_POST['product_name'];
@@ -69,7 +70,8 @@ $mail->Subject = 'Perle Product'. rand(1, 10000);
 $mail->isHTML(true);
 
 $mail->Body = "
-    <p>Ф.И.О: $customer_name</p>
+    <p>Имя покупателя: $customer_name</p>
+    <p>Фамилия покупателя: $customer_surname</p>
     <p>Мобильный телефон: $phone</p>
 ";
 if (!empty($customer_address)) {
