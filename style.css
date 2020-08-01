@@ -163,7 +163,7 @@ a:hover {
 }
 
 form {
-    padding: 40px 20px 20px;
+    padding: 10px 20px 20px;
     background-color: #fff;
     max-width: 320px;
     margin: auto;
@@ -171,16 +171,24 @@ form {
 }
 
 form input {
-    width: 100%;
+    font-size: 14px;
+    width: 80%;
     margin-bottom: 3%;
+    margin-top: 5px;
+    line-height: 150%;
+    box-shadow: 0 0 5px 3px silver;
 }
 
-form button {
+form .order {
     background-color: #1f1f1f;
     color: white;
     border: 0px;
     border-radius: 0;
-    width: 80px;
+
+    font-size: 16px;
+    line-height: 150%;
+    
+    width: 100px;
     height: auto;
     line-height: 160%;
 
@@ -188,7 +196,8 @@ form button {
     bottom: 2%;
     right: 40%;
 }
- form button:hover {
+ form .order:hover {
     background-color: #434040;
+    box-shadow: 0 0 5px 5px silver;
  }
     
